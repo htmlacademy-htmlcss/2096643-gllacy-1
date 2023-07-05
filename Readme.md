@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Тюстина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2096643).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Иванов] (https://htmlacademy.ru/profile/id342945).
 
 ---
 
