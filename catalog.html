@@ -8,88 +8,87 @@
 
   <body>
     <header class="page-header">
-      <a href="index.html"><img class="page-header__logo" src="#" alt="Логотип магазина GllacyShop."></a>
+      <a href="index.html"><img class="page-header__logo" src="images/icons/logo.svg" width="137" height="56" alt="Логотип магазина GllacyShop."></a>
       <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item nav-item__catalog"><a href="catalog.html">Каталог</a>
-            <ul class="catalog__list">
-              <li class="catalog__item"><a class="catalog_link" href="#">Новинки</a></li>
-              <li class="catalog__item"><a class="catalog_link" href="#">Сливочное</a></li>
-              <li class="catalog__item"><a class="catalog_link" href="#">Щербеты</a></li>
-              <li class="catalog__item"><a class="catalog_link" href="#">Фруктовый лед</a></li>
-              <li class="catalog__item"><a class="catalog_link" href="#">Мелорин</a></li>
+        <ul class="nav__list">
+          <li class="nav__item nav-dropdown"><a class="nav__link" href="#">Каталог</a>
+            <ul class="nav-dropdown__list">
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav__link nav-dropdown__link--accent" href="#">Новинки</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav__link" href="#">Сливочное</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav__link" href="#">Щербеты</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav__link" href="#">Фруктовый лед</a></li>
+              <li class="nav-dropdown__item"><a class="nav-dropdown__link nav__link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-item__link" href="#">Доставка и оплата</a></li>
-          <li class="nav-item"><a class="nav-item__link" href="#">О компании</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Доставка и оплата</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">О компании</a></li>
         </ul>
-        <ul class="nav-list user-nav">
-          <li class="nav-item user-nav__tel"><span class="visually-hidden">Номер телефона</span><a class="contacts__tel"
-              href="tel:88005558628">+7 800
+        <ul class="user-nav">
+          <li class="user-nav__item phone"><span class="visually-hidden">Номер телефона</span><a class="phone__number" href="tel:88005558628">+7 800
               555-86-28</a></li>
-          <li class="nav-item user-nav__search"><span class="visually-hidden">Поиск</span></li>
-          <li class="nav-item user-nav__enter"><span class="visually-hidden">Вход</span></li>
-          <li class="nav-item user-nav__basket"><span class="visually-hidden">Корзина</span></li>
+          <li class="user-nav__item search"><button class="search__button" type="button"><span class="visually-hidden">Поиск</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z" clip-rule="evenodd"/></svg></button></li>
+          <li class="user-nav__item log-in"><button class="log-in__button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" clip-rule="evenodd"/></svg><span class="log-in__text">Вход</span></button></li>
+          <li class="user-nav__item cart"><button class="cart__button" type="button"><span class="visually-hidden">Корзина</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg><span class="cart__text">Пусто</span></button></li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <h1 class="main-inner__title">Сливочное мороженное</h1>
+    <main class="inner-page">
+      <h1 class="inner-page__title">Сливочное мороженное</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link">Сливочное мороженное</a></li>
       </ul>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter__group">
-            <legend class="catalog-filter__title">Сортировка</legend>
-            <select class="catalog-filter__sorter" name="sorting">
-              <option value="popular">По популярности</option>
-              <option value="price">По цене</option>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="form__group">
+            <legend class="form__title">Сортировка</legend>
+            <select class="form__sorter" name="sorting">
+              <option class="form__text" value="popular">По популярности</option>
+              <option class="form__text" value="price">По цене</option>
             </select>
           </fieldset>
 
-          <fieldset class="catalog-filter__group">
-            <legend class="catalog-filter__title">Цена: 100 ₽ – 500 ₽</legend>
+          <fieldset class="form__group">
+            <legend class="form__title">Цена: 100 ₽ – 500 ₽</legend>
           </fieldset>
 
-          <fieldset class="catalog-filter__group">
-            <legend class="catalog-filter__title">Жирность</legend>
-            <ul class="catalog-filter__list">
-              <li class="catalog-filter__item">
-                <label><input type="radio" name="persent" value="0%">0%</label>
+          <fieldset class="form__group">
+            <legend class="form__title">Жирность</legend>
+            <ul class="percent">
+              <li class="percent__item">
+                <label class="percent__text form__text"><input type="radio" name="persent" value="0%">0%</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="radio" name="persent" value="10%" checked>до 10%</label>
+              <li class="percent__item">
+                <label class="percent__text form__text"><input type="radio" name="persent" value="10%" checked>до 10%</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="radio" name="persent" value="30%">до 30%</label>
+              <li class="percent__item">
+                <label class="percent__text form__text"><input type="radio" name="persent" value="30%">до 30%</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="radio" name="persent" value="more30%">больше 30%</label>
+              <li class="percent__item">
+                <label class="percent__text form__text"><input type="radio" name="persent" value="more30%">больше 30%</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter__group">
-            <legend class="catalog-filter__title">Наполнители</legend>
-            <ul class="catalog-filter__list">
-              <li class="catalog-filter__item">
-                <label><input type="checkbox" name="chokolate" checked>шоколадные</label>
+          <fieldset class="form__group">
+            <legend class="form__title">Наполнители</legend>
+            <ul class="tastes">
+              <li class="tastes__item">
+                <label class="tastes__text form__text"><input type="checkbox" name="chokolate" checked>шоколадные</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="checkbox" name="sugar-sprinkles" checked>сахарные посыпки</label>
+              <li class="tastes__item">
+                <label class="tastes__text form__text"><input type="checkbox" name="sugar-sprinkles" checked>сахарные посыпки</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="checkbox" name="fruit">фрукты</label>
+              <li class="tastes__item">
+                <label class="tastes__text form__text"><input type="checkbox" name="fruit">фрукты</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="checkbox" name="syrup">сиропы</label>
+              <li class="tastes__item">
+                <label class="tastes__text form__text"><input type="checkbox" name="syrup">сиропы</label>
               </li>
-              <li class="catalog-filter__item">
-                <label><input type="checkbox" name="jam">джемы</label>
+              <li class="tastes__item">
+                <label class="tastes__text form__text"><input type="checkbox" name="jam">джемы</label>
               </li>
             </ul>
           </fieldset>
@@ -99,90 +98,102 @@
       </section>
       <section class="products">
         <h2 class="visually-hidden">Товары</h2>
-        <ul class="products__list">
-          <li class="products__item">
-            <h3 class="products__item_title">Малинка</h3>
-            <p class="products__item_text">Сливочное мороженое с малиновым джемом</p>
-            <p class="products__item_price">310 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+        <ul class="card">
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-raspberry.jpg" alt="Малиновое мороженное">
+            <h3 class="card__title">Малинка</h3>
+            <p class="card__text">Сливочное мороженое с малиновым джемом</p>
+            <p class="card__price">310 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Фисташка</h3>
-            <p class="products__item_text">Фисташковый пломбир с кусочками шоколада</p>
-            <p class="products__item_price">340 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-pistachio.jpg" alt="Фисташковое мороженное">
+            <h3 class="card__title">Фисташка</h3>
+            <p class="card__text">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="card__price">340 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Черника</h3>
-            <p class="products__item_text">Крем-брюле с черничным джемом</p>
-            <p class="products__item_price">330 р/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-blueberry.jpg" alt="Черничное мороженное">
+            <h3 class="card__title">Черника</h3>
+            <p class="card__text">Крем-брюле с черничным джемом</p>
+            <p class="card__price">330 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Бабл-гам</h3>
-            <p class="products__item_text">Ванильный пломбир со сладкой посыпкой</p>
-            <p class="products__item_price">320 р/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-bablgam.jpg" alt="Мороженное бабл-гам">
+            <h3 class="card__title">Бабл-гам</h3>
+            <p class="card__text">Ванильный пломбир со сладкой посыпкой</p>
+            <p class="card__price">320 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Ежевика</h3>
-            <p class="products__item_text">Сливочное мороженое с ежевичным джемом</p>
-            <p class="products__item_price">330 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-blackberry.jpg" alt="Ежевичное мороженное">
+            <h3 class="card__title">Ежевика</h3>
+            <p class="card__text">Сливочное мороженое с ежевичным джемом</p>
+            <p class="card__price">330 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Банан</h3>
-            <p class="products__item_text">Сливочный пломбир с банановым вкусом</p>
-            <p class="products__item_price">340 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-banana.jpg" alt="Банановое мороженное">
+            <h3 class="card__title">Банан</h3>
+            <p class="card__text">Сливочный пломбир с банановым вкусом</p>
+            <p class="card__price">340 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Шоколадка</h3>
-            <p class="products__item_text">Классический шоколадный пломбир</p>
-            <p>270 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-chokolate.jpg" alt="Шоколадное мороженное">
+            <h3 class="card__title">Шоколадка</h3>
+            <p class="card__text">Классический шоколадный пломбир</p>
+            <p class="card__price">270 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Клубничка</h3>
-            <p class="products__item_text">Сливочный пломбир с клубничным вкусом</p>
-            <p class="products__item_price">300 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-strawberry.jpg" alt="Клубничное мороженное">
+            <h3 class="card__title">Клубничка</h3>
+            <p class="card__text">Сливочный пломбир с клубничным вкусом</p>
+            <p class="card__price">300 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Лимон</h3>
-            <p class="products__item_text">Освежающий лимонный сорбет</p>
-            <p class="products__item_price">310 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-lemon.jpg" alt="Лимонное мороженное">
+            <h3 class="card__title">Лимон</h3>
+            <p class="card__text">Освежающий лимонный сорбет</p>
+            <p class="card__price">310 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Ментол</h3>
-            <p class="products__item_text">Сливочный пломбир с ментоловым сиропом</p>
-            <p class="products__item_price">320 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-mentol.jpg" alt="Ментоловое мороженное">
+            <h3 class="card__title">Ментол</h3>
+            <p class="card__text">Сливочный пломбир с ментоловым сиропом</p>
+            <p class="card__price">320 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Орешек</h3>
-            <p class="products__item_text">Фисташковый пломбир с шоколадным сиропом</p>
-            <p class="products__item_price">360 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-nut.jpg" alt="Ореховое мороженное">
+            <h3 class="card__title">Орешек</h3>
+            <p class="card__text">Фисташковый пломбир с шоколадным сиропом</p>
+            <p class="card__price">360 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
-          <li class="products__item">
-            <h3 class="products__item_title">Крем-брюле</h3>
-            <p class="products__item_text">Классическое крем-брюле </p>
-            <p class="products__item_price">280 ₽/кг</p>
-            <button class="button products__item_button" type="button"><span class="visually-hidden">Добавить в
-                корзину</span></button>
+          <li class="card__item">
+            <img class="card__img" width="168" height="168" src="images/catalog/icecream-cream.jpg" alt="Мороженное крем-брюле">
+            <h3 class="card__title">Крем-брюле</h3>
+            <p class="card__text">Классическое крем-брюле </p>
+            <p class="card__price">280 ₽/кг</p>
+            <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
+                корзину</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" clip-rule="evenodd"/></svg></button>
           </li>
         </ul>
         <div class="pagination">
@@ -201,37 +212,42 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <section class="page-footer__social">
+    <footer class="footer">
+      <section class="social">
         <h2 class="visually-hidden">Контакты</h2>
-        <ul class="socials__items footer__socials">
-          <li class="socials__item"><a class="socials__link" href="https://t.me/htmlacademy"><span
-                class="visually-hidden">Telegram</span></a></li>
+        <ul class="socials footer__socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.29 5.9c-.78.33-2.34 1-4.67 2.02-.38.15-.58.3-.6.44-.02.24.28.34.7.47l.17.05c.4.14.96.3 1.24.3.26 0 .55-.1.87-.32a82.12 82.12 0 0 1 3.38-2.23c.05-.01.12-.03.16.01.05.04.04.12.04.14a22.62 22.62 0 0 1-2.2 2.16l-.2.18c-.37.37-.66.64.02 1.1.33.2.6.38.85.56a59.64 59.64 0 0 0 1.2.82c.34.23.64.45 1 .41.22-.02.44-.22.55-.82.27-1.41.79-4.48.9-5.75.02-.1.01-.21 0-.31a.34.34 0 0 0-.12-.22.52.52 0 0 0-.3-.1c-.31.01-.77.17-3 1.1Z" clip-rule="evenodd"/></svg>
+          </a></li>
           <li class="socials__item"><a class="socials__link" href="https://vk.com/htmlacademy"><span
-                class="visually-hidden">Vkontakte</span></a></li>
+                class="visually-hidden">Vkontakte</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.4 9.98H7.9s-1.05.06-1.98-.79c-1.01-.92-1.9-2.76-1.9-2.76s-.06-.12 0-.18.23-.07.23-.07H5.4s.11.01.19.06c.06.04.1.12.1.12s.18.4.43.78c.47.72.7.88.86.8.24-.11.16-1.02.16-1.02s0-.33-.11-.48c-.1-.11-.28-.14-.36-.15-.06-.01.04-.14.18-.2.2-.09.57-.1 1-.09.33 0 .43.02.56.05.3.06.3.27.27.71a9.7 9.7 0 0 0-.01.6c-.01.22-.02.48.15.58.09.05.3 0 .84-.8.25-.37.44-.81.44-.81s.04-.08.11-.12c.07-.03.15-.02.15-.02h1.2s.37-.04.43.1c.06.15-.14.5-.63 1.07-.46.54-.69.75-.67.92.01.13.16.25.44.48a3.4 3.4 0 0 1 .8.8c.26.4-.3.42-.3.42l-1.06.02s-.23.04-.54-.15c-.15-.1-.3-.25-.45-.4-.23-.22-.44-.43-.62-.38-.3.08-.28.65-.28.65s0 .12-.07.18c-.07.07-.22.08-.22.08Z" clip-rule="evenodd"/></svg></a></li>
           <li class="socials__item"><a class="socials__link" href="https://www.youtube.com/user/htmlacademyru"><span
-                class="visually-hidden">Youtube</span></a></li>
+                class="visually-hidden">Youtube</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" d="M9.34 7.86 7.46 7c-.16-.08-.3 0-.3.19v1.64c0 .18.14.27.3.2l1.88-.88c.16-.08.16-.2 0-.28ZM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 11.25c-4.1 0-4.17-.37-4.17-3.25S3.9 4.75 8 4.75s4.17.37 4.17 3.25-.07 3.25-4.17 3.25Z"/></svg> </a></li>
         </ul>
       </section>
-      <section class="page-footer__other">
+      <section class="footer__menu">
         <h2 class="visually-hidden">Документация</h2>
-        <ul class="page-footer__other_list">
-          <li class="page-footer__other_item"><a class="footer__other-info_link" href="#">Для поставщиков</a></li>
-          <li class="page-footer__other_item"><a class="footer__other-info_link" href="#">О производстве</a></li>
-          <li class="page-footer__other_item"><a class="footer__other-info_link" href="#">Наши документы</a></li>
-          <li class="page-footer__other_item"><a class="footer__other-info_link" href="#">Экологические стандарты</a>
+        <ul class="menu">
+          <li class="menu__item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#2D3440" d="M13.9 3a3.67 3.67 0 0 0-5.2 0l-.7.7-.7-.7a3.67 3.67 0 0 0-5.2 5.18l.71.7L8 14.09l5.18-5.2.71-.7a3.67 3.67 0 0 0 0-5.19Z"/></svg><a class="menu__link" href="#">Для поставщиков</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">О производстве</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Наши документы</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
-      <section class="page-footer__developed">
+      <section class="footer__developed">
         <h2 class="visually-hidden">Разработчик</h2>
-        <ul class="page-footer__developed_list">
-          <li class="page-footer__developed_item">
-            <a class="page-footer__developed_link" href="https://www.htmlacademy.ru/"><img class="developed-icon"
+        <ul class="developed">
+          <li class="developed__item">
+            <a class="developed__link" href="https://www.htmlacademy.ru/"><img class="developed__icon"
                 src="#" alt="Логотип HTML-Academy."></a>
           </li>
-          <li class="page-footer__developed_item">
-            <p class="page-footer__developed_text">Сделано в <a href="https://www.htmlacademy.ru/">.htmlacademy</a> 2021
+          <li class="developed__item">
+            <p class="developed__text">Сделано в <a href="https://www.htmlacademy.ru/">.htmlacademy</a> 2021
             </p>
           </li>
         </ul>
