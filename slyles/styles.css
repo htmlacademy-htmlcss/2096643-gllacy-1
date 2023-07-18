@@ -49,6 +49,13 @@ a {
   text-decoration: none;
 }
 
+.page-main section {
+  margin-bottom: 80px;
+}
+.page-main section:last-child {
+  margin-bottom: 48px;
+}
+
 .button {
   margin: 0;
   padding: 12px 32px;
@@ -86,7 +93,20 @@ a {
   border-radius: 16px;
 }
 
+.shadow-small {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.shadow-medium {
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+.shadow-big {
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
 .text {
+  margin: 0;
   color: #565C66;
 }
 
@@ -94,6 +114,7 @@ a {
 /*Header*/
 .page-header {
   display: flex;
+  margin-bottom: 24px;
 }
 
 .page-header__logo {
@@ -225,7 +246,6 @@ a {
 .slider__item {
   display: flex;
   align-items: center;
-  outline: 2px solid tomato;
   padding-left: 70px;
 }
 
@@ -246,7 +266,6 @@ a {
 .slider__text {
   font-size: 18px;
   line-height: 24px;
-  margin: 0;
   margin-bottom: 48px;
 }
 
@@ -332,6 +351,8 @@ margin-right: 0;
   font-weight: 900;
   line-height: 46px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 .offer__banner {
@@ -362,6 +383,10 @@ margin-right: 0;
 .popular {
   display: flex;
   flex-direction: column;
+}
+
+.popular__slogan {
+
 }
 
 .card {
@@ -397,7 +422,6 @@ margin-right: 0;
 
 .card__text {
   width: 190px;
-  margin: 0;
   margin-bottom: 16px;
 }
 
@@ -455,7 +479,6 @@ margin-right: 0;
 
 .advantages__item {
   padding-left: 64px;
-  outline: 2px solid #FF7799;
 }
 .advantages__item_ice-cream {
   position: relative;
@@ -466,7 +489,7 @@ margin-right: 0;
   content: "";
   width: 48px;
   height: 48px;
-  top: 25px;
+  top: 10px;
   left: 0;
   background-image: url(../images/icons/ice-cream.svg);
   background-repeat: no-repeat;
@@ -479,7 +502,7 @@ margin-right: 0;
   content: "";
   width: 48px;
   height: 48px;
-  top:25px;
+  top:10px;
   left: 0;
   background-image: url(../images/icons/cow.svg);
   background-repeat: no-repeat;
@@ -494,7 +517,7 @@ margin-right: 0;
   content: "";
   width: 48px;
   height: 48px;
-  top: 25px;
+  top: 10px;
   left: 0;
   background-image: url(../images/icons/leaf.svg);
   background-repeat: no-repeat;
@@ -509,7 +532,7 @@ margin-right: 0;
     content: "";
     width: 48px;
     height: 48px;
-    top:25px;
+    top:10px;
     left: 0;
     background-image: url(../images/icons/thermometer.svg);
     background-repeat: no-repeat;
@@ -558,7 +581,24 @@ margin-right: 0;
   padding: 26px;
 }
 
+.subscription__text {
+  margin-bottom: 42px;
+}
 
+.subscription__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription__input {
+  width: 332px;
+  height: 48px;
+  font: inherit;
+}
+
+.subscription__input::placeholder{
+  padding: 14px 16px;
+}
 /*Delivery*/
 .delivery {
   display: grid;
@@ -567,14 +607,10 @@ margin-right: 0;
   background-image: url(../images/delivery-bgimage.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  /* transform: scale(-1, 1); */
   background-color: #FFFFFF;
 }
 
 .delivery__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 500px;
   height: 406px;
   margin: 64px 64px 64px auto;
@@ -586,12 +622,17 @@ margin-right: 0;
   margin-top: 40px;
 }
 .order {
+  display: flex;
+  flex-wrap: wrap;
   margin: 32px 40px 40px 40px;
 }
+
 .order label {
   font-weight: 700;
   line-height: 20px;
 }
+
+
 /*Contacts*/
 .contacts {
   display: grid;
@@ -649,7 +690,6 @@ margin-right: 0;
   gap: 24px;
   padding: 0;
   margin: 0;
-  outline: 2px solid red;
   list-style: none;
 }
 
@@ -658,6 +698,7 @@ margin-right: 0;
 }
 
 .developed {
+  margin: 0;
   list-style: none;
 }
 
@@ -665,9 +706,6 @@ margin-right: 0;
 .inner-page {
   display: flex;
   flex-direction: column;
-}
-
-.inner-page__title {
 }
 
 .breadcrumbs {
@@ -771,4 +809,32 @@ margin-right: 0;
   border-radius: 20px;
   border: 2px solid #FCFCFC;
   background-color: rgba(252, 252, 252, 0.30);
+}
+
+/*Pagination*/
+
+.pagination__show-more {
+  color: #2D3440;
+  background-color: #FCFCFC;
+}
+
+.pagination__list {
+  display: flex;
+  list-style: none;
+}
+
+.pagination__item {
+  content: "";
+  padding: 8px;
+}
+
+.pagination__item_active {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 2px 8px;
+  border-radius: 50px;
+  align-items: center;
+  background-color: #FCFCFC;
 }
