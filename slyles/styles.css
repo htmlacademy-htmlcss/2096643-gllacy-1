@@ -283,7 +283,6 @@ a {
 .wrapper {
   display: flex;
   justify-content: space-between;
-  outline: 2px solid red;
 }
 
 .carousel {
@@ -387,6 +386,7 @@ margin-right: 0;
   display: flex;
   gap: 30px;
 }
+
 .offer__text {
   max-width: 305px;
   color: #2D3440;
@@ -414,11 +414,13 @@ margin-right: 0;
 .popular {
   display: flex;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 91px;
   justify-content: space-between;
   text-align: center;
   padding: 0;
@@ -430,7 +432,6 @@ margin-right: 0;
   flex-direction: column;
   align-items: center;
   width: 270px;
-  margin-bottom: 91px;
   background-color: #FCFCFC;
   list-style: none;
 }
@@ -575,12 +576,15 @@ margin-right: 0;
 
 .news {
   display: flex;
-  justify-content: space-between;
+
+  gap: 30px;
 }
 
 .blog {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   width: 570px;
-  height: 224px;
   background-color: #FFFFFF;
   background-image: url(../images/blog-bgimage.jpg);
   background-size: 100% auto;
@@ -590,12 +594,12 @@ margin-right: 0;
 .blog__text {
   margin-left: 32px;
   margin-top: 32px;
-  margin-bottom: 12px;
   line-height: 20px;
 }
 
 .blog__title {
-  width: 303px;
+  max-width: 303px;
+  margin: 0;
   margin-left: 32px;
   font-size: 24px;
   font-weight: 700;
@@ -604,7 +608,6 @@ margin-right: 0;
 
 .subscription {
   width: 570px;
-  height: 224px;
   background-image: url(../images/subscription-bgimage.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -613,14 +616,10 @@ margin-right: 0;
 .subscription__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 42px;
   background-color: #FFFFFF;
   margin: 6px;
   padding: 26px;
-}
-
-.subscription__text {
-  margin-bottom: 42px;
 }
 
 .subscription__form {
@@ -648,20 +647,40 @@ margin-right: 0;
   background-color: #FFFFFF;
 }
 
+.delivery__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.delivery__title {
+  text-align: left;
+  margin: 0;
+}
+
+.delivery__text {
+  text-align: left;
+}
+
 .delivery__form {
   width: 500px;
   height: 406px;
   margin: 64px 64px 64px auto;
   background-color: #FFFFFF;
+
 }
 
 .delivery__form .text {
   text-align: center;
   margin-top: 40px;
 }
+
 .order {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 32px 40px 40px 40px;
 }
 
@@ -676,7 +695,6 @@ margin-right: 0;
   height: 14px;
   background-color: transparent;
   border: none;
-  outline: 2px solid red;
 }
 
 
