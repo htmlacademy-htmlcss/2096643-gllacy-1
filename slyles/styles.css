@@ -730,7 +730,6 @@ margin-right: 0;
 
 .delivery__form {
   min-width: 420px;
-  height: 406px;
   margin: 64px;
   padding: 40px;
   background-color: #FFFFFF;
@@ -756,6 +755,7 @@ margin-right: 0;
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .order__date input {
@@ -764,7 +764,10 @@ margin-right: 0;
   box-sizing: border-box;
   font: inherit;
   font-weight: 400;
+  margin-top: 8px;
   padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
   color: #B9B9B9;
 }
 
@@ -777,6 +780,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   flex-wrap: wrap;
   flex-direction: column;
   text-align: start;
+  margin-bottom: 20px;
 }
 
 .order__tel input {
@@ -785,7 +789,10 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   box-sizing: border-box;
   font: inherit;
   font-weight: 400;
+  margin-top: 8px;
   padding: 14px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
   color: #B9B9B9;
 }
 
@@ -794,15 +801,18 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   flex-direction: column;
   flex-wrap: wrap;
   grid-column: 1/-1;
+  margin-bottom: 32px;
 }
 
 .order__address input {
-
   grid-column: 1/-1;
   box-sizing: border-box;
   font: inherit;
+  margin-top: 8px;
   padding: 14px 16px;
   font-weight: 400;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
   color: #B9B9B9;
 }
 
@@ -814,10 +824,10 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   border: none;
 }
 
-.tooltip__icon_data {
+.tooltip__data {
   position: absolute;
   top:3px;
-  left: 45px;
+  left: 40px;
 }
 
 .order__address {
@@ -829,10 +839,10 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   justify-self: center;
 }
 
-.tooltip__icon_address {
+.tooltip__address {
   position: absolute;
   top: 3px;
-  left: 55px;
+  left: 50px;
 }
 
 
