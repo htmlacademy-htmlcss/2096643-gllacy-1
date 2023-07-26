@@ -402,14 +402,14 @@ margin-right: 0;
   fill: #FCFCFC;
 }
 
-/*delete*/
-.slider__item {
+.slider__item {/*скрытые страницы слайдера*/
   display: none;
 }
 
-.slider__item_current {
+.slider__item_current {/*скрытые страницы слайдера*/
   display: flex;
 }
+
 
 /*Offer*/
 
@@ -473,10 +473,14 @@ margin-right: 0;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,270px);
   column-gap: 30px;
   row-gap: 91px;
+  /* display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 91px; */
   text-align: center;
   padding: 0;
 }
@@ -486,8 +490,7 @@ margin-right: 0;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px;
   background-color: #FCFCFC;
   list-style: none;
 }
@@ -516,11 +519,10 @@ margin-right: 0;
   display: flex;
   align-self: stretch;
   justify-content: space-between;
-  padding: 0;
   margin: 0;
   margin-bottom: 24px;
-
 }
+
 .card__price {
   align-self: center;
   font-size: 20px;
@@ -530,9 +532,11 @@ margin-right: 0;
 }
 
 .card__button {
-  padding: 8px 11px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 8px;
   border-radius: 100%;
-  align-self: center;
   border: none;
 }
 
@@ -890,7 +894,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 
 .menu {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content max-content;
   column-gap: 24px;
   row-gap: 8px;
   padding: 0;
