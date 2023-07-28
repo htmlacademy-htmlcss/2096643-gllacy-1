@@ -70,6 +70,7 @@ a {
   box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.30), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   background-color: #FF2F64;
   color: #FCFCFC;
+  cursor: pointer;
 }
 
 .button-light {
@@ -85,6 +86,7 @@ a {
   box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.40), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   color: #2D3440;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -393,6 +395,7 @@ margin-right: 0;
   border-radius: 50%;
   border: 2px solid #FCFCFC;
   background-color:  rgba(252, 252, 252, 0.30);
+  cursor: pointer;
 }
 
 .slider__icon path{
@@ -535,7 +538,9 @@ margin-right: 0;
   padding: 8px;
   box-shadow: none;
   border-radius: 100%;
-  border: none;}
+  border: none;
+  cursor: pointer;
+}
 
 .card__icon {
   width: 16px;
@@ -820,6 +825,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   height: 14px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .tooltip__data {
@@ -1080,6 +1086,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   border-radius: 20px;
   border: 2px solid #FCFCFC;
   background-color: rgba(252, 252, 252, 0.30);
+  cursor: pointer;
 }
 
 /*Pagination*/
