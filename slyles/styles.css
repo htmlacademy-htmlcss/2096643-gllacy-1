@@ -761,19 +761,6 @@ margin-right: 0;
   margin-bottom: 20px;
 }
 
-.order__date input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  font: inherit;
-  font-weight: 400;
-  margin-top: 8px;
-  padding: 14px 16px;
-  border: 1px solid #B9B9B9;
-  border-radius: 4px;
-  color: #B9B9B9;
-}
-
 input::-webkit-calendar-picker-indicator{ /*отключение календарика у формы*/
   display: none;
 }
@@ -786,14 +773,15 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   margin-bottom: 20px;
 }
 
-.order__tel input {
+.order__input {
   display: block;
+  min-height: 50px;
   width: 100%;
   box-sizing: border-box;
   font: inherit;
   font-weight: 400;
   margin-top: 8px;
-  padding: 14px 16px;
+  padding: 10px 12px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   color: #B9B9B9;
@@ -807,16 +795,12 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   margin-bottom: 32px;
 }
 
-.order__address input {
+.order__input_address {
   grid-column: 1/-1;
-  box-sizing: border-box;
-  font: inherit;
-  margin-top: 8px;
-  padding: 14px 16px;
-  font-weight: 400;
-  border: 1px solid #B9B9B9;
-  border-radius: 4px;
-  color: #B9B9B9;
+}
+
+.tooltip {
+  position: relative;
 }
 
 .tooltip__button {
@@ -824,6 +808,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   width: 14px;
   height: 14px;
   background-color: transparent;
+  padding: 0;
   border: none;
   cursor: pointer;
 }
@@ -831,7 +816,42 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 .tooltip__data {
   position: absolute;
   top:3px;
-  left: 40px;
+  left: 45px;
+}
+
+.tooltip__wrapper {
+  display: none;
+}
+
+.tooltip__wrapper {
+  display: none;
+}
+
+.tooltip__text {
+  font: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 170px;
+  padding: 10px 8px;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.20);
+  border: 1px solid #B9B9B9;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+}
+
+.tooltip__wrapper {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+}
+
+.tooltip__address:hover .tooltip__wrapper {
+  display: block;
+}
+
+.tooltip__data:hover .tooltip__wrapper {
+  display: block;
 }
 
 .order__address {
@@ -846,7 +866,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 .tooltip__address {
   position: absolute;
   top: 3px;
-  left: 50px;
+  left: 55px;
 }
 
 
