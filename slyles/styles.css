@@ -284,7 +284,7 @@ a {
   background-color: rgba(255, 119, 153, 1);
 }
 
-.dropdown__link:focus {
+.dropdown__link--current {
   border-radius: 0;
   background-color: rgba(255, 74, 120, 1);
   color: rgba(252, 252, 252, 1);
@@ -546,6 +546,7 @@ a {
   width: 12px;
   height: 12px;
   border-radius: 100px;
+  box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.3);
   margin-right: 8px;
   list-style: none;
@@ -555,12 +556,25 @@ a {
 margin-right: 0;
 }
 
-.carousel__item_current {
+.carousel__item--current {
   width: 12px;
   height: 12px;
   border-radius: 100px;
   background-color: rgba(252, 252, 252, 1);
   list-style: none;
+}
+
+.carousel__item:hover {
+  border: 1px solid rgba(252, 252, 252, 1);
+}
+
+.carousel__item:active {
+  border: none;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.socials__item:focus {
+  border: 1px solid rgba(45, 52, 64, 1);
 }
 
 .socials {
@@ -596,6 +610,20 @@ margin-right: 0;
   fill: rgba(252, 252, 252, 1);
 }
 
+.socials__link:hover { /*уточнить правильно ли, т.к. видны края бэкграунда*/
+  border-radius: 24px;
+  background-color: rgba(45, 52, 64, 1);
+}
+
+.socials__link:active {
+  opacity: 0.5;
+}
+
+.socials__link:focus {
+  border-radius: 24px;
+  background-color: rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
+}
 
 .slider__toggle {
   display: flex;
@@ -621,6 +649,21 @@ margin-right: 0;
   display: flex;
 }
 
+.slider__toggle:hover {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.slider__toggle:hover .slider__icon-path {
+  fill: rgba(45, 52, 64, 1);
+}
+
+.slider__toggle:active {
+  background-color: rgba(252, 252, 252, 0.50);
+}
+
+.slider__toggle:focus {
+  border: 2px solid #2D3440;
+}
 
 /*Offer*/
 
