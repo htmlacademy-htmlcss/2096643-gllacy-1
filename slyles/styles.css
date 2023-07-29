@@ -1288,7 +1288,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   padding: 8px;
 }
 
-.breadcrumbs__item::after{
+.breadcrumbs__item:not(:last-child):after{
   position: absolute;
   content: "";
   width: 12px;
@@ -1300,6 +1300,10 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 
 .breadcrumbs__item:last-child {
   margin-right: 0;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
 }
 
 /*Filter*/
