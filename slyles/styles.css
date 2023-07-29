@@ -1389,7 +1389,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 }
 
 
-.pagination__link_active {
+.pagination__link--current {
   width: 24px;
   height: 24px;
   margin: 0;
@@ -1401,4 +1401,20 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   grid-column: 2/3;
   align-self: center;
   justify-self: center;
+}
+
+.pagination__link:hover {
+  border-radius: 50px;
+  background-color: rgba(252, 252, 252, 0.50);
+}
+
+.pagination__link:active {
+  border: 1px solid #FCFCFC;
+  box-sizing: border-box;
+  }
+
+.pagination__link:focus {
+  border-radius: 50px;
+  box-sizing: border-box;
+  border: 1px solid #2D3440;
 }
