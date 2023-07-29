@@ -383,9 +383,9 @@ a {
   color: rgba(252, 252, 252, 1);
 }
 
-.search--open .search__icon-path,
-.log-in--open .log-in__icon-path,
-.basket--open .basket__icon-path {
+.search--open path,
+.log-in--open path,
+.basket--open path {
   fill: rgba(252, 252, 252, 1);
 }
 
@@ -653,7 +653,7 @@ margin-right: 0;
   background-color: rgba(252, 252, 252, 1);
 }
 
-.slider__toggle:hover .slider__icon-path {
+.slider__toggle:hover path {
   fill: rgba(45, 52, 64, 1);
 }
 
@@ -791,9 +791,35 @@ margin-right: 0;
   align-content: center;
   padding: 8px;
   box-shadow: none;
+  box-sizing: border-box;
   border-radius: 100%;
   border: none;
   cursor: pointer;
+}
+
+.card__button:hover {
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid #FF2F64;
+}
+
+.card__button:hover path {
+  fill: #2D3440;
+}
+
+.card__button:active {
+  background-color: #FFCBD8;
+}
+
+.card__button:focus {
+  border-radius: 26px;
+  box-sizing: border-box;
+  background-color: #FF2F64;
+  border: 2px solid #2D3440;
+}
+
+.card__button:focus path {
+  fill: #FCFCFC;
 }
 
 .card__icon {
@@ -1358,10 +1384,28 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   align-self:flex-end;
   color: #2D3440;
   border-radius: 20px;
+  box-sizing: border-box;
   border: 2px solid #FCFCFC;
   background-color: rgba(252, 252, 252, 0.30);
   cursor: pointer;
 }
+
+.form__button:hover {
+  border: none;
+  background-color: #FCFCFC;
+}
+
+.form__button:active {
+  background-color: rgba(252, 252, 252, 0.50);
+}
+
+.form__button:focus {
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid #2D3440;
+  background-color: rgba(252, 252, 252, 0.30);
+}
+
 
 /*Pagination*/
 .pagination {
