@@ -121,6 +121,39 @@ a {
   color: #565C66;
 }
 
+.button:hover {
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 0.30);
+  box-shadow: 0 0 0 4px #FF2F64, 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
+.button:active {
+  color: #FCFCFC;
+  background-color: #FEAFC3;
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
+.button:focus {
+  background-color: #FF2F64;
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+
+}
+
+.button-light:hover {
+  background-color: rgba(252, 252, 252, 0.40);
+  box-shadow: 0 0 0 4px  #FCFCFC, 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
+.button-light:active {
+  background-color: rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 2px  rgba(45, 52, 64, 1), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
+.button-light:focus {
+  background-color: #FF2F64;
+  box-shadow: 0 0 0 2px  rgba(45, 52, 64, 1), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
+}
+
 /*Header*/
 .page-header {
   display: flex;
@@ -149,21 +182,120 @@ a {
   list-style: none;
 }
 
-.nav__item {
-  display: block;
+.nav__link {
+  display: flex;
+  gap: 6px;
+  align-items: center;
   padding: 8px 16px;
 }
 
-.nav-dropdown__list {
-  display: none; /*временно, чтобы не мешал*/
+.dropdown--open {
+  position: relative;
 }
 
-.nav-dropdown__item {
+.dropdown {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  top: 40px;
+  left: 0;
+  padding: 8px 0;
+  list-style: none;
+  border-radius: 4px;
+  background-color: #FCFCFC;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
+  z-index: 10;
+}
+
+.dropdown__link {
+  display:block;
   font-size: 14px;
+  padding: 8px 16px;
 }
 
-.nav-dropdown__link--accent {
+.nav__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown--accent {
+  position: relative;
+  display:inline-block;
+  padding: 6px 16px;
   font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.dropdown--accent::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 103px;
+  height: 1px;
+  left: 16px;
+  top: 45px;
+  background-color: #B9B9B9;
+}
+
+.nav__link:hover {
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.50);
+}
+
+.nav__link:active {
+  background-color: #FCFCFC;
+}
+
+.nav__link:focus {
+  border-radius: 30px;
+  border: 2px solid #2D3440;
+  background-color: rgba(252, 252, 252, 0.50);
+}
+
+.dropdown--open .dropdown {
+  display: grid;
+}
+
+.dropdown--open .nav__link_catalog {
+  background-color: #FF4A78;
+  border-radius: 30px;
+  padding: 8px 16px;
+}
+
+.dropdown--open .nav__link_catalog {
+  color: #FCFCFC;
+}
+
+.dropdown--open .nav__icon {
+  transform: rotate(180deg);
+  margin-bottom: -3px;
+}
+
+.dropdown__link:hover {
+  border-radius: 0;
+  background-color: #FFCBD8;
+}
+
+.dropdown__link:active {
+  border-radius: 0;
+  background-color: rgba(255, 119, 153, 1);
+}
+
+.dropdown__link:focus {
+  border-radius: 0;
+  background-color: rgba(255, 74, 120, 1);
+  color: rgba(252, 252, 252, 1);
+}
+
+.dropdown--open .nav__link_catalog:hover {
+  opacity: 0.6;
+}
+
+.dropdown--open .nav__link_catalog:active {
+  opacity: 0.3;
 }
 
 .user-nav {
@@ -179,10 +311,18 @@ a {
 
 .user-nav__item {
   margin-right: 16px;
+  cursor: pointer;
 }
 
-.user-nav__item button {
-  min-width: max-content;
+.user-nav__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min-content;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
 }
 
 .user-nav__item:last-child {
@@ -201,7 +341,52 @@ a {
   background-color: rgba(252, 252, 252, 0.30);
   border: none;
   padding: 8px;
+}
 
+.search {
+  position: relative;
+}
+
+.search__popup {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 24px 16px;
+  background-color: #FCFCFC;
+}
+
+.search__input {
+  width: 324px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 2px solid rgba(185, 185, 185, 1);
+  box-sizing: border-box;
+  color: #B9B9B9;
+}
+
+.search--open .search__popup {
+  display: block;
+}
+
+.search--open .search__button,
+.log-in--open .log-in__button,
+.basket--open .basket__button {
+  background-color: #FF4A78;
+}
+
+.search--open .search__button,
+.log-in--open .user-nav__button,
+.basket--open .basket__button {
+  color: rgba(252, 252, 252, 1);
+}
+
+.search--open .search__icon-path,
+.log-in--open .log-in__icon-path,
+.basket--open .basket__icon-path {
+  fill: rgba(252, 252, 252, 1);
 }
 
 .log-in__button {
@@ -241,11 +426,37 @@ a {
 .basket__icon path {
   fill: #2D3440;
 }
-.nav button {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 20px;
-  color: #2D3440;
+
+.user-nav__button:hover  {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.user-nav__button:focus  {
+  border: 2px solid rgba(45, 52, 64, 1);
+}
+
+.user-nav__button:active  {
+  border:none;
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.search--open .user-nav__button:hover,
+.log-in--open .user-nav__button:hover,
+.basket--open .user-nav__button:hover{
+  background-color: rgba(255, 74, 120, 0.6);
+}
+
+.search--open .user-nav__button:focus,
+.log-in--open .user-nav__button:focus,
+.basket--open .user-nav__button:focus{
+  border: 2px solid rgba(45, 52, 64, 1);
+}
+
+.search--open .user-nav__button:active,
+.log-in--open .user-nav__button:active,
+.basket--open .user-nav__button:active{
+  border: none;
+  opacity: 0.3;
 }
 
 /*Slider*/
@@ -813,7 +1024,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   cursor: pointer;
 }
 
-.tooltip__data {
+.tooltip-data {
   position: absolute;
   top:3px;
   left: 45px;
@@ -846,11 +1057,11 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   left: 25px;
 }
 
-.tooltip__address:hover .tooltip__wrapper {
+.tooltip-address:hover .tooltip__wrapper {
   display: block;
 }
 
-.tooltip__data:hover .tooltip__wrapper {
+.tooltip-data:hover .tooltip__wrapper {
   display: block;
 }
 
@@ -863,7 +1074,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   justify-self: center;
 }
 
-.tooltip__address {
+.tooltip-address {
   position: absolute;
   top: 3px;
   left: 55px;
