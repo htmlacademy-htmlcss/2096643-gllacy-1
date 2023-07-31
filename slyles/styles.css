@@ -150,7 +150,7 @@ a {
 }
 
 .button-light:focus {
-  background-color: #FF2F64;
+  background-color: rgba(252, 252, 252, 0.50);
   box-shadow: 0 0 0 2px  rgba(45, 52, 64, 1), 0 4px 12px 0 rgba(45, 52, 64, 0.1);
 }
 
@@ -185,8 +185,10 @@ a {
 .nav__link {
   display: flex;
   gap: 6px;
-  align-items: center;
-  padding: 8px 16px;
+  padding: 6px 14px;
+  outline: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .dropdown--open {
@@ -246,12 +248,13 @@ a {
 }
 
 .nav__link:active {
+  border-radius: 30px;
   background-color: #FCFCFC;
 }
 
 .nav__link:focus {
   border-radius: 30px;
-  border: 2px solid #2D3440;
+  border-color: #2D3440;
   background-color: rgba(252, 252, 252, 0.50);
 }
 
@@ -339,8 +342,9 @@ a {
   height: 32px;
   border-radius: 27px;
   background-color: rgba(252, 252, 252, 0.30);
-  border: none;
-  padding: 8px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 6px;
 }
 
 .search {
@@ -394,8 +398,9 @@ a {
   height: 32px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.30);
-  border: none;
-  padding: 6px 16px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 4px 14px;
 }
 
 .log-in__icon {
@@ -407,8 +412,9 @@ a {
   height: 32px;
   border-radius: 30px;
   background-color: rgba(252, 252, 252, 0.30);
-  border: none;
-  padding: 6px 16px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 4px 14px;
 }
 
 .basket__icon {
@@ -789,18 +795,17 @@ margin-right: 0;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 8px;
+  padding: 6px;
   box-shadow: none;
-  box-sizing: border-box;
+  border: 2px solid transparent;
   border-radius: 100%;
-  border: none;
   cursor: pointer;
 }
 
 .card__button:hover {
   box-shadow: none;
   box-sizing: border-box;
-  border: 2px solid #FF2F64;
+  border-color: #FF2F64;
 }
 
 .card__button:hover path {
@@ -815,7 +820,7 @@ margin-right: 0;
   border-radius: 26px;
   box-sizing: border-box;
   background-color: #FF2F64;
-  border: 2px solid #2D3440;
+  border-color: #2D3440;
 }
 
 .card__button:focus path {
