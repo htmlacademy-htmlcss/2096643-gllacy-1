@@ -222,6 +222,7 @@ a {
   display: block;
   width: 16px;
   height: 16px;
+  margin-top: 1px;
 }
 
 .dropdown--accent {
@@ -274,7 +275,7 @@ a {
 
 .dropdown--open .nav__icon {
   transform: rotate(180deg);
-  margin-bottom: -3px;
+  margin-top: 3px;
 }
 
 .dropdown__link:hover {
