@@ -591,6 +591,7 @@ margin-right: 0;
 }
 
 .socials__item {
+  position: relative;
   margin-right: 16px;
 }
 
@@ -616,14 +617,35 @@ margin-right: 0;
   fill: rgba(252, 252, 252, 1);
 }
 
-.socials__link:hover { /*уточнить правильно ли, т.к. видны края бэкграунда*/
-  border-radius: 24px;
+.socials__link:hover:before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
   background-color: rgba(45, 52, 64, 1);
+  z-index: -20;
+}
+
+.socials__link:active:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgba(45, 52, 64, 1);
+  z-index: -20;
+  opacity: 0.5;
 }
 
 .socials__link:active {
   opacity: 0.5;
 }
+
 
 .socials__link:focus {
   border-radius: 24px;
@@ -1104,15 +1126,11 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   left: 45px;
 }
 
-.tooltip__wrapper {
-  display: none;
-}
-
-.tooltip__wrapper {
-  display: none;
-}
-
 .tooltip__text {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  display: none;
   font: inherit;
   font-size: 12px;
   font-weight: 400;
@@ -1125,17 +1143,13 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   background-color: #FFFFFF;
 }
 
-.tooltip__wrapper {
-  position: absolute;
-  top: -10px;
-  left: 25px;
-}
-
-.tooltip-address:hover .tooltip__wrapper {
+.tooltip-address:hover .tooltip__text,
+.tooltip-address:focus .tooltip__text  {
   display: block;
 }
 
-.tooltip-data:hover .tooltip__wrapper {
+.tooltip-data:hover .tooltip__text,
+.tooltip-data:focus .tooltip__text {
   display: block;
 }
 
