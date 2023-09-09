@@ -112,10 +112,6 @@ a {
   border-radius: 16px;
 }
 
-.shadow-popup {
-  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
-}
-
 .text {
   margin: 0;
   color: #565C66;
@@ -353,15 +349,6 @@ a {
   position: relative;
 }
 
-.search__popup {
-  display: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  padding: 24px 16px;
-  background-color: #FCFCFC;
-}
-
 .search__input {
   width: 324px;
   font: inherit;
@@ -371,10 +358,6 @@ a {
   border: 2px solid rgba(185, 185, 185, 1);
   box-sizing: border-box;
   color: #B9B9B9;
-}
-
-.search--open .search__popup {
-  display: block;
 }
 
 .search--open .search__button,
@@ -1205,7 +1188,7 @@ margin-right: 0;
   margin: 64px;
   padding: 40px;
   background-color: #FFFFFF;
-
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
 .delivery__subtitle {
@@ -1382,7 +1365,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   color: #565C66;
 }
 
-.popup {
+.modal {
   position:fixed;
   display: none;
   justify-content: center;
@@ -1394,35 +1377,32 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   background-color: rgba(45, 52, 64, 0.3);
 }
 
-.popup--open {
+.modal--open {
   display: flex;
 }
 
-.popup__container {
-  background-color: rgba(252, 252, 252, 1);
-  /* bottom: 490px; */
-  height: max-content;
+.modal__container {
+  position: relative;
   padding: 64px;
-  margin-top: 300px;
+  margin: auto;
+  background-color: rgba(252, 252, 252, 1);
   border-radius: 8px;
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
-  outline: 1px solid red;
 }
 
-.popup__form {
-  position: relative;
+.modal__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.popup__subtitle {
+.modal__subtitle {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
-.popup__input {
+.modal__input {
   width: 442px;
   padding: 14px 16px;
   border-radius: 4px;
@@ -1433,26 +1413,29 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   color: rgba(185, 185, 185, 1);
 }
 
-.popup__input::placeholder {
+.modal__input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: rgba(185, 185, 185, 1);
 }
 
-.popup__button {
+.modal__button {
   margin-top: 16px;
   align-self: flex-end;
 }
 
-.popup__close {
-  width: 20px;
-  height: 20px;
+.modal__close {
+  width: 40px;
+  height: 40px;
   position: absolute;
-  right: -32px;
-  top: -32px;
+  right: 30px;
+  top: 30px;
   border: none;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/icons/Cross.svg);
   cursor: pointer;
 }
 /*Footer*/
@@ -1666,7 +1649,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.percent {
+.form__list {
   border-radius: 18px;
   margin: 0;
   padding: 8px 24px;
@@ -1677,32 +1660,90 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   list-style: none;
 }
 
-.percent__item {
+.form__item{
+  position: relative;
+  display: block;
   margin-right: 16px;
 }
 
-.percent__item:last-child {
+.form__item:last-child {
   margin-right: 0;
 }
 
-.tastes {
-  border-radius: 18px;
-  margin: 0;
-  padding: 9px 24px;
-  background-color: rgba(252, 252, 252, 0.3);
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1em;
-  list-style: none;
+.control {
+  position: relative;
+  display: block;
+  padding-left: 24px;
 }
 
-.tastes__item {
-  margin-right: 16px;
+.control__marker {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(45, 52, 64, 1);
 }
 
-.tastes__item:last-child {
-  margin-right: 0;
+.control__input[type="radio"]:checked + .control__marker::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(45, 52, 64, 1);
 }
+
+.control__input[type="radio"]:hover + .control__marker::before {
+  background-color:rgba(252, 252, 252, 1);
+}
+
+.control__input[type="radio"]:hover + .control__marker {
+  border-color: rgba(252, 252, 252, 1);
+}
+
+.control__input[type="radio"]:disabled + .control__marker::before {
+  background-color:rgba(45, 52, 64, 0.5);
+}
+
+.control__input[type="radio"]:disabled + .control__marker {
+  border-color: rgba(45, 52, 64, 0.5);
+}
+
+.control__input[type="checkbox"] + .control__marker {
+  top: 3px;
+  border-radius: 0;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/icons/checkbox.svg);
+}
+
+.control__input[type="checkbox"]:checked + .control__marker {
+  top: 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/images/icons/check-on.svg);
+}
+
+.control__input[type="checkbox"]:hover + .control__marker {
+  background-image: url(/images/icons/check-hover.svg);
+}
+.control__input[type="checkbox"]:checked:hover + .control__marker {
+  background-image: url(/images/icons/chek-on-hover.svg);
+}
+
+.control__input[type="checkbox"]:disabled + .control__marker {
+  background-image: url(/images/icons/check-disabled.svg);
+}
+.control__input[type="checkbox"]:checked:disabled + .control__marker {
+  background-image: url(/images/icons/chek-on-disabled.svg);
+}
+
 
 .form__button {
   font: inherit;

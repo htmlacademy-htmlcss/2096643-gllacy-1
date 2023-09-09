@@ -46,7 +46,7 @@
             <div class="popover popover-search">
               <div class="popover__content">
                 <h2 class="popover__title visually-hidden">Поиск по сайту</h2>
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                   <input class="popover__input search-input" type="text" placeholder="Поиск по сайту">
                 </form>
               </div>
@@ -62,13 +62,13 @@
             <div class="popover popover-log-in">
               <div class="popover__content">
                 <h2 class="popover__title">Личный кабинет</h2>
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                   <div class="input-wrapper">
                     <input class="popover__input" type="email" name="email" placeholder="email@example.com">
                     <input class="popover__input" type="password" name="password" value="123456">
                   </div>
                   <div class="form__wrapper">
-                    <button class="button" type="button">Bойти</button>
+                    <button class="button" type="submit">Bойти</button>
                     <div class="link-wrapper">
                       <a class="form__link" href="#">Забыли пароль?</a>
                       <a class="form__link" href="#">Регистрация</a>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">310 ₽</p>
-                      <button class="delete"><span class="visually-hidden">Удалить позицию из корзины.</span><img
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
@@ -117,13 +117,13 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">480 ₽</p>
-                      <button class="delete"><span class="visually-hidden">Удалить позицию из корзины.</span><img
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                 </ul>
                 <div class="popover__wrapper">
-                  <button class="button">Оформить заказ</button>
+                  <button class="button" type="submit">Оформить заказ</button>
                   <p class="basket__price">Итого: 790 ₽</p>
                 </div>
               </div>
@@ -427,7 +427,7 @@
             Закажите
             доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
-        <div class="delivery__form radius-m shadow-popup">
+        <div class="delivery__form radius-m">
           <p class="delivery__subtitle text">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить
             заказ.</p>
           <form class="order" action="https://echo.htmlacademy.ru/" method="post">
@@ -477,20 +477,6 @@
           <p class="time">(с 10 до 20 ежедневно)</p>
           <button class="button contacts__button" type="button">Форма обратной связи</button>
         </address>
-        <div class="popup">
-        <div class="popup__container">
-          <form class="popup__form" action="https://echo.htmlacademy.ru/" method="get">
-            <h2 class="visually-hidden">Форма обратной связи</h2>
-            <p class="popup__subtitle">Мы обязательно ответим вам!</p>
-            <input class="popup__input" type="text" name="name" placeholder="Имя и фамилия">
-            <input class="popup__input"type="email" name="email" placeholder="email@example.com">
-            <textarea class="popup__input" name="text" rows="5">В свободной форме</textarea>
-            <button class="button popup__button" type="submit">Отправить</button>
-            <button class="popup__close">
-              <img src="/images/icons/Cross.svg" alt="Закрыть">
-            </button>
-          </form>
-        </div>
       </div>
       </section>
     </main>
@@ -553,6 +539,18 @@
         </ul>
       </section>
     </footer>
+    <div class="modal">
+      <div class="modal__container">
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="modal__subtitle">Мы обязательно ответим вам!</p>
+          <input class="modal__input" type="text" name="name" placeholder="Имя и фамилия">
+          <input class="modal__input"type="email" name="email" placeholder="email@example.com">
+          <textarea class="modal__input" name="text" rows="5">В свободной форме</textarea>
+          <button class="button modal__button" type="submit">Отправить</button>
+        </form>
+        <button class="modal__close" type="button">
+          </button>
+      </div>
   </body>
-
 </html>

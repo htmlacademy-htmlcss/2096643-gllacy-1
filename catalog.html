@@ -47,7 +47,7 @@
             <div class="popover popover-search">
               <div class="popover__content">
                 <h2 class="popover__title visually-hidden">Поиск по сайту</h2>
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                   <input class="popover__input search-input" type="text" placeholder="Поиск по сайту">
                 </form>
               </div>
@@ -63,13 +63,13 @@
             <div class="popover popover-log-in">
               <div class="popover__content">
                 <h2 class="popover__title">Личный кабинет</h2>
-                <form action="https://echo.htmlacademy.ru/" method="get">
+                <form action="https://echo.htmlacademy.ru/" method="post">
                   <div class="input-wrapper">
                     <input class="popover__input" type="email" name="email" placeholder="email@example.com">
                     <input class="popover__input" type="password" name="password" value="123456">
                   </div>
                   <div class="form__wrapper">
-                    <button class="button" type="button">Bойти</button>
+                    <button class="button" type="submit">Bойти</button>
                     <div class="link-wrapper">
                       <a class="form__link" href="#">Забыли пароль?</a>
                       <a class="form__link" href="#">Регистрация</a>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">310 ₽</p>
-                      <button class="delete"><span class="visually-hidden">Удалить позицию из корзины.</span><img
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
@@ -118,13 +118,13 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">480 ₽</p>
-                      <button class="delete"><span class="visually-hidden">Удалить позицию из корзины.</span><img
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                 </ul>
                 <div class="popover__wrapper">
-                  <button class="button">Оформить заказ</button>
+                  <button class="button" type="submit">Оформить заказ</button>
                   <p class="basket__price">Итого: 790 ₽</p>
                 </div>
               </div>
@@ -171,43 +171,58 @@
 
           <fieldset class="form__group">
             <legend class="form__title">Жирность</legend>
-            <ul class="percent">
-              <li class="percent__item">
-                <label class="percent__text form__text"><input class="visually-hidden" type="radio" name="persent" value="0%">0%</label>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="0%">0%
+                <span class="control__marker"></span></label>
               </li>
-              <li class="percent__item">
-                <label class="percent__text form__text"><input class="visually-hidden" type="radio" name="persent" value="10%" checked>до
-                  10%</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="10%" checked>до
+                  10%
+                  <span class="control__marker"></span></label>
               </li>
-              <li class="percent__item">
-                <label class="percent__text form__text"><input class="visually-hidden" type="radio" name="persent" value="30%">до 30%</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="30%">до 30%
+                <span class="control__marker"></span>
+              </label>
               </li>
-              <li class="percent__item">
-                <label class="percent__text form__text"><input class="visually-hidden" type="radio" name="persent" value="more30%">больше
-                  30%</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="more30%">больше
+                  30%
+                  <span class="control__marker"></span></label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__group">
             <legend class="form__title">Наполнители</legend>
-            <ul class="tastes">
-              <li class="tastes__item">
-                <label class="tastes__text form__text"><input type="checkbox" name="chokolate"
-                    checked>шоколадные</label>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="chokolate"
+                    checked>шоколадные
+                    <span class="control__marker"></span>
+                  </label>
               </li>
-              <li class="tastes__item">
-                <label class="tastes__text form__text"><input type="checkbox" name="sugar-sprinkles" checked>сахарные
-                  посыпки</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="sugar-sprinkles" checked>сахарные
+                  посыпки
+                  <span class="control__marker"></span>
+                </label>
               </li>
-              <li class="tastes__item">
-                <label class="tastes__text form__text"><input type="checkbox" name="fruit">фрукты</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="fruit">фрукты
+                  <span class="control__marker"></span>
+                </label>
               </li>
-              <li class="tastes__item">
-                <label class="tastes__text form__text"><input type="checkbox" name="syrup">сиропы</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="syrup">сиропы
+                  <span class="control__marker"></span>
+                </label>
               </li>
-              <li class="tastes__item">
-                <label class="tastes__text form__text"><input type="checkbox" name="jam">джемы</label>
+              <li class="form__item">
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="jam">джемы
+                  <span class="control__marker"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
