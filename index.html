@@ -53,8 +53,8 @@
             </div>
           </li>
           <li class="user-nav__item log-in">
-            <button class="user-nav__button log-in__button" type="button"><svg
-                class="log-in__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <button class="user-nav__button log-in__button" type="button"><svg class="log-in__icon"
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                 <path fill="#2D3440" fill-rule="evenodd"
                   d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
                   clip-rule="evenodd" />
@@ -102,8 +102,8 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">310 ₽</p>
-                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
-                          src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из
+                          корзины.</span><img src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                   <li class="basket__item">
@@ -117,8 +117,8 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">480 ₽</p>
-                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
-                          src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из
+                          корзины.</span><img src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                 </ul>
@@ -146,9 +146,9 @@
                   всей семьи. </p>
                 <a class="slider__button button-light" href="#">Заказать</a>
               </div>
-              <div class="wrapper">
-                <button class="slider__toggle slider__toggle_left"><svg class="slider__icon"
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+              <div class="wrapper wrapper-slider-button">
+                <button class="slider__toggle slider__toggle_left">
+                  <svg class="slider__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M9.803 3.805a.665.665 0 0 0-.94-.94L4.195 7.533a.665.665 0 0 0 0 .941l4.669 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
                       clip-rule="evenodd" />
@@ -223,6 +223,10 @@
           <div class="wrapper">
             <ul class="preview">
               <li class="preview__item preview__item_current">
+                <img class="preview__img" src="images/main-slider/main-icecream-1.png" width="66" height="150"
+                  alt="Нежный пломбир с клубничным джемом.">
+              </li>
+              <li class="preview__item">
                 <img class="preview__img" src="images/main-slider/main-icecream-2.png" width="66" height="150"
                   alt="Сливочное мороженое со вкусом банана.">
               </li>
@@ -230,10 +234,7 @@
                 <img class="preview__img" src="images/main-slider/main-icecream-3.png" width="66" height="150"
                   alt="Карамельный пломбир с маршмеллоу.">
               </li>
-              <li class="preview__item">
-                <img class="preview__img" src="images/main-slider/main-icecream-1.png" width="66" height="150"
-                  alt="Нежный пломбир с клубничным джемом.">
-              </li>
+
             </ul>
           </div>
         </div>
@@ -477,7 +478,7 @@
           <p class="time">(с 10 до 20 ежедневно)</p>
           <button class="button contacts__button" type="button">Форма обратной связи</button>
         </address>
-      </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -545,12 +546,13 @@
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="modal__subtitle">Мы обязательно ответим вам!</p>
           <input class="modal__input" type="text" name="name" placeholder="Имя и фамилия">
-          <input class="modal__input"type="email" name="email" placeholder="email@example.com">
+          <input class="modal__input" type="email" name="email" placeholder="email@example.com">
           <textarea class="modal__input" name="text" rows="5">В свободной форме</textarea>
           <button class="button modal__button" type="submit">Отправить</button>
         </form>
         <button class="modal__close" type="button">
-          </button>
+        </button>
       </div>
   </body>
+
 </html>

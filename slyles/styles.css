@@ -624,8 +624,21 @@ a {
 }
 
 .slider__item {
+  position: relative;
   display: flex;
   padding-left: 70px;
+}
+
+.slider__item::before {
+  position: absolute;
+  content: "";
+  top:115px;
+  left: 520px;
+  width: 327px;
+  height: 312px;
+  border-radius: 50%;
+  background-color:rgba(255, 203, 216, 1);
+  z-index: -5;
 }
 
 .slider__inner {
@@ -649,20 +662,31 @@ a {
   margin-bottom: 48px;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .slider__img {
   padding-top: 23px;
   padding-bottom: 24px;
 }
 
-.slider__img_mini {
-  width: 66px;
-  height: 150px;
+.wrapper-slider-button {
+  position: relative;
 }
 
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.slider__toggle_left {
+  position: absolute;
+  top: 250px;
+  left: -40px;
+}
+
+.slider__toggle_right {
+  position: absolute;
+  top: 250px;
+  right: 2px;
 }
 
 .preview {
@@ -674,6 +698,7 @@ a {
 }
 
 .preview__item {
+  position: relative;
   display: block;
   padding: 0 17px;
 }
@@ -683,9 +708,22 @@ a {
 }
 
 .preview__img {
-  width: 66px;
+  width: 85px;
   height: 150px;
+  opacity: 0.4;
 }
+
+.preview__item::before {
+  position: absolute;
+  content: "";
+  top:25px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color:rgba(255, 203, 216, 0.4);
+}
+
 
 .carousel {
   display: flex;
@@ -1236,7 +1274,11 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   padding: 10px 12px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
-  color: #B9B9B9;
+  color: rgba(185, 185, 185, 1);
+}
+
+.order__input::placeholder {
+  color: rgba(185, 185, 185, 1);
 }
 
 .order__address {
@@ -1645,7 +1687,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   border-radius: 20px;
   border: none;
   margin: 0;
-  padding: 8px 63px 8px 16px;
+  padding: 8px 16px 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
 }
 
