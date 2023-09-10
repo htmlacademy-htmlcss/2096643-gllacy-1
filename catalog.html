@@ -48,7 +48,7 @@
               <div class="popover__content">
                 <h2 class="popover__title visually-hidden">Поиск по сайту</h2>
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="popover__input search-input" type="text" placeholder="Поиск по сайту">
+                  <input class="popover__input search-input input" type="text" placeholder="Поиск по сайту">
                 </form>
               </div>
             </div>
@@ -65,8 +65,8 @@
                 <h2 class="popover__title">Личный кабинет</h2>
                 <form action="https://echo.htmlacademy.ru/" method="post">
                   <div class="input-wrapper">
-                    <input class="popover__input" type="email" name="email" placeholder="email@example.com">
-                    <input class="popover__input" type="password" name="password" value="123456">
+                    <input class="popover__input input" type="email" name="email" placeholder="email@example.com">
+                    <input class="popover__input input" type="password" name="password" value="123456">
                   </div>
                   <div class="form__wrapper">
                     <button class="button" type="submit">Bойти</button>
@@ -98,11 +98,11 @@
                         alt="Малиновое мороженное">
                       <div>
                         <h3 class="basket__subtitle">Малинка</h3>
-                        <p class="basket__bill">1 кг х 310 ₽</p>
+                        <p class="basket__bill">1 кг х 310 &#8381;</p>
                       </div>
                     </div>
                     <div class="popover__wrapper">
-                      <p class="basket__price">310 ₽</p>
+                      <p class="basket__price">310 &#8381;</p>
                       <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
@@ -113,11 +113,11 @@
                         alt="Мороженное бабл-гам">
                       <div>
                         <h3 class="basket__subtitle">Бабл-гам</h3>
-                        <p class="basket__bill">1,5 кг х 320 ₽</p>
+                        <p class="basket__bill">1,5 кг х 320 &#8381;</p>
                       </div>
                     </div>
                     <div class="popover__wrapper">
-                      <p class="basket__price">480 ₽</p>
+                      <p class="basket__price">480 &#8381;</p>
                       <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
                           src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
@@ -125,7 +125,7 @@
                 </ul>
                 <div class="popover__wrapper">
                   <button class="button" type="submit">Оформить заказ</button>
-                  <p class="basket__price">Итого: 790 ₽</p>
+                  <p class="basket__price">Итого: 790 &#8381;</p>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Сливочное мороженное</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Сливочное мороженное</a></li>
       </ul>
       <h1 class="inner-page__title">Сливочное мороженное</h1>
       <section class="filter">
@@ -154,13 +154,13 @@
           <fieldset class="form__group">
             <div class="range-wrapper">
               <legend class="form__title">Цена:</legend>
-              <label class="range-label"><input class="range-input" type="number" value="100" name="min-price">₽</label>
-              <p class="range-line">&ndash;</p>
-              <label class="range-label"><input class="range-input" type="number" value="500" name="max-price">₽</label>
+              <label class="range-label"><input class="range-input" type="number" value="100" name="min-price"> &#8381;</label>
+              <p class="range-line">&nbsp;&ndash;&nbsp;</p>
+              <label class="range-label"><input class="range-input" type="number" value="500" name="max-price"> &#8381;</label>
             </div>
             <div class="range">
               <div class="range__scale">
-                <div class="range__bar" style="left:32px; width:56px">
+                <div class="range__bar" style="left:32px; width:80px">
                   <button class="range__toggle toggle-min"></button>
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 <button class="range__toggle toggle-max"></button>
@@ -239,7 +239,7 @@
             <h3 class="card__title">Малинка</h3>
             <p class="card__text text">Сливочное мороженое с малиновым джемом</p>
             <div class="card__wrapper">
-              <p class="card__price">310 ₽/кг</p>
+              <p class="card__price">310 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -254,7 +254,7 @@
             <h3 class="card__title">Фисташка</h3>
             <p class="card__text text">Фисташковый пломбир с кусочками шоколада</p>
             <div class="card__wrapper">
-              <p class="card__price">340 ₽/кг</p>
+              <p class="card__price">340 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -270,7 +270,7 @@
             <h3 class="card__title">Черника</h3>
             <p class="card__text text">Крем-брюле с черничным джемом</p>
             <div class="card__wrapper">
-              <p class="card__price">330 ₽/кг</p>
+              <p class="card__price">330 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -286,7 +286,7 @@
             <h3 class="card__title">Бабл-гам</h3>
             <p class="card__text text">Ванильный пломбир со сладкой посыпкой</p>
             <div class="card__wrapper">
-              <p class="card__price">320 ₽/кг</p>
+              <p class="card__price">320 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -302,7 +302,7 @@
             <h3 class="card__title">Ежевика</h3>
             <p class="card__text text">Сливочное мороженое с ежевичным джемом</p>
             <div class="card__wrapper">
-              <p class="card__price">330 ₽/кг</p>
+              <p class="card__price">330 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -318,7 +318,7 @@
             <h3 class="card__title">Банан</h3>
             <p class="card__text text">Сливочный пломбир с банановым вкусом</p>
             <div class="card__wrapper">
-              <p class="card__price">340 ₽/кг</p>
+              <p class="card__price">340 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -334,7 +334,7 @@
             <h3 class="card__title">Шоколадка</h3>
             <p class="card__text text">Классический шоколадный пломбир</p>
             <div class="card__wrapper">
-              <p class="card__price">270 ₽/кг</p>
+              <p class="card__price">270 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -350,7 +350,7 @@
             <h3 class="card__title">Клубничка</h3>
             <p class="card__text text">Сливочный пломбир с клубничным вкусом</p>
             <div class="card__wrapper">
-              <p class="card__price">300 ₽/кг</p>
+              <p class="card__price">300 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -366,7 +366,7 @@
             <h3 class="card__title">Лимон</h3>
             <p class="card__text text">Освежающий лимонный сорбет</p>
             <div class="card__wrapper">
-              <p class="card__price">310 ₽/кг</p>
+              <p class="card__price">310 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -382,7 +382,7 @@
             <h3 class="card__title">Ментол</h3>
             <p class="card__text text">Сливочный пломбир с ментоловым сиропом</p>
             <div class="card__wrapper">
-              <p class="card__price">320 ₽/кг</p>
+              <p class="card__price">320 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -398,7 +398,7 @@
             <h3 class="card__title">Орешек</h3>
             <p class="card__text text">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="card__wrapper">
-              <p class="card__price">360 ₽/кг</p>
+              <p class="card__price">360 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
@@ -414,7 +414,7 @@
             <h3 class="card__title">Крем-брюле</h3>
             <p class="card__text text">Классическое крем-брюле </p>
             <div class="card__wrapper">
-              <p class="card__price">280 ₽/кг</p>
+              <p class="card__price">280 &#8381;/кг</p>
               <button class="button card__button" type="button"><span class="visually-hidden">Добавить в
                   корзину</span><svg class="card__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="14"
                   viewBox="0 0 15 14" fill="none">
