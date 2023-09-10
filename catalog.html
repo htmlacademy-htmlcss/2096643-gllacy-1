@@ -44,7 +44,7 @@
                   d="M2.66 7.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z"
                   clip-rule="evenodd" />
               </svg></button>
-            <div class="popover popover-search">
+            <div class="popover popover-search ">
               <div class="popover__content">
                 <h2 class="popover__title visually-hidden">Поиск по сайту</h2>
                 <form action="https://echo.htmlacademy.ru/" method="post">
@@ -54,8 +54,8 @@
             </div>
           </li>
           <li class="user-nav__item log-in">
-            <button class="user-nav__button log-in__button" type="button"><svg
-                class="log-in__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <button class="user-nav__button log-in__button" type="button"><svg class="log-in__icon"
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                 <path fill="#2D3440" fill-rule="evenodd"
                   d="M9 1.67c0-.37.3-.67.67-.67h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 1 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 1.67Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.32a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 11.47a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z"
                   clip-rule="evenodd" />
@@ -103,8 +103,8 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">310 &#8381;</p>
-                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
-                          src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из
+                          корзины.</span><img src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                   <li class="basket__item">
@@ -118,8 +118,8 @@
                     </div>
                     <div class="popover__wrapper">
                       <p class="basket__price">480 &#8381;</p>
-                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из корзины.</span><img
-                          src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
+                      <button class="delete" type="button"><span class="visually-hidden">Удалить позицию из
+                          корзины.</span><img src="/images/icons/Cross.svg" width="16" height="16" alt=""></button>
                     </div>
                   </li>
                 </ul>
@@ -137,7 +137,8 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Сливочное мороженное</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Сливочное мороженное</a>
+        </li>
       </ul>
       <h1 class="inner-page__title">Сливочное мороженное</h1>
       <section class="filter">
@@ -154,40 +155,46 @@
           <fieldset class="form__group">
             <div class="range-wrapper">
               <legend class="form__title">Цена:</legend>
-              <label class="range-label"><input class="range-input" type="number" value="100" name="min-price"> &#8381;</label>
+              <label class="range-label"><input class="range-input" type="number" value="100" name="min-price">
+                &#8381;</label>
               <p class="range-line">&nbsp;&ndash;&nbsp;</p>
-              <label class="range-label"><input class="range-input" type="number" value="500" name="max-price"> &#8381;</label>
+              <label class="range-label"><input class="range-input" type="number" value="500" name="max-price">
+                &#8381;</label>
             </div>
             <div class="range">
               <div class="range__scale">
                 <div class="range__bar" style="left:32px; width:80px">
                   <button class="range__toggle toggle-min"></button>
                   <span class="visually-hidden">Изменить минимальную цену.</span>
-                <button class="range__toggle toggle-max"></button>
-                <span class="visually-hidden">Изменить максимальную цену.</span>
+                  <button class="range__toggle toggle-max"></button>
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </div>
               </div>
-            </div>
           </fieldset>
 
           <fieldset class="form__group">
             <legend class="form__title">Жирность</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="0%">0%
-                <span class="control__marker"></span></label>
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio"
+                    name="persent" value="0%">0%
+                  <span class="control__marker"></span></label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="10%" checked>до
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio"
+                    name="persent" value="10%" checked>до
                   10%
                   <span class="control__marker"></span></label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="30%">до 30%
-                <span class="control__marker"></span>
-              </label>
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio"
+                    name="persent" value="30%">до 30%
+                  <span class="control__marker"></span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="radio" name="persent" value="more30%">больше
+                <label class="control form__text"><input class="control__input visually-hidden" type="radio"
+                    name="persent" value="more30%">больше
                   30%
                   <span class="control__marker"></span></label>
               </li>
@@ -198,29 +205,33 @@
             <legend class="form__title">Наполнители</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="chokolate"
-                    checked>шоколадные
-                    <span class="control__marker"></span>
-                  </label>
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox"
+                    name="chokolate" checked>шоколадные
+                  <span class="control__marker"></span>
+                </label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="sugar-sprinkles" checked>сахарные
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox"
+                    name="sugar-sprinkles" checked>сахарные
                   посыпки
                   <span class="control__marker"></span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="fruit">фрукты
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox"
+                    name="fruit">фрукты
                   <span class="control__marker"></span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="syrup">сиропы
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox"
+                    name="syrup">сиропы
                   <span class="control__marker"></span>
                 </label>
               </li>
               <li class="form__item">
-                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox" name="jam">джемы
+                <label class="control form__text"><input class="control__input visually-hidden" type="checkbox"
+                    name="jam">джемы
                   <span class="control__marker"></span>
                 </label>
               </li>

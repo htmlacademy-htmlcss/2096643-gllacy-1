@@ -351,13 +351,8 @@ a {
 
 .search__input {
   width: 324px;
-  font: inherit;
-  font-size: 16px;
-  line-height: 20px;
   padding: 14px 16px;
   border: 2px solid rgba(185, 185, 185, 1);
-  box-sizing: border-box;
-  color: #B9B9B9;
 }
 
 .search--open .search__button,
@@ -424,6 +419,7 @@ a {
   background-color: rgba(252, 252, 252, 1);
   border-radius: 4px;
   box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
+  z-index: 10;
 }
 
 .popover-search {
@@ -461,7 +457,8 @@ a {
   box-sizing: border-box;
 }
 
-.popover__input::placeholder {
+.log-in .popover__input,
+.log-in .popover__input::placeholder {
   color: rgba(45, 52, 64, 1);
 }
 
@@ -1244,7 +1241,9 @@ margin-right: 0;
 }
 
 .order__date .order__input {
-  padding-left: 16px;
+  padding-left: 12px;
+  font-weight: 400;
+
 }
 
 input::-webkit-calendar-picker-indicator{ /*отключение календарика у формы*/
@@ -1263,8 +1262,6 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   display: block;
   min-height: 50px;
   width: 100%;
-  font: inherit;
-  font-weight: 400;
   margin-top: 8px;
   color: rgba(185, 185, 185, 1);
 }
@@ -1272,10 +1269,10 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
 .input {
   font:inherit;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: rgba(185, 185, 185, 1);
   box-sizing: border-box;
+  padding: 14px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
 }
@@ -1311,7 +1308,7 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   color: rgba(185, 185, 185, 1);
 }
 
@@ -1482,12 +1479,8 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   width: 442px;
   padding: 14px 16px;
   border-radius: 4px;
-  border: 1px solid rgba(185, 185, 185, 1);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: rgba(185, 185, 185, 1);
 }
+
 
 .modal__button {
   margin-top: 16px;
