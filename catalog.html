@@ -68,11 +68,11 @@
                     <input class="popover__input input" type="email" name="email" placeholder="email@example.com">
                     <input class="popover__input input" type="password" name="password" value="123456">
                   </div>
-                  <div class="form__wrapper">
+                  <div class="popover-log-in__wrapper">
                     <button class="button" type="submit">Bойти</button>
                     <div class="link-wrapper">
-                      <a class="form__link" href="#">Забыли пароль?</a>
-                      <a class="form__link" href="#">Регистрация</a>
+                      <a class="popover__link" href="#">Забыли пароль?</a>
+                      <a class="popover__link" href="#">Регистрация</a>
                     </div>
                   </div>
                 </form>
@@ -86,7 +86,7 @@
                 <path fill="#2D3440" fill-rule="evenodd"
                   d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                   clip-rule="evenodd" />
-              </svg><span class="basket__text">Пусто</span>
+              </svg><span class="basket__text basket__text--empty">Нет товаров</span><span class="basket__text basket__text--full">2 товара</span>
             </button>
             <div class="popover popover-basket">
               <div class="popover__content">
@@ -129,6 +129,11 @@
                 </div>
               </div>
             </div>
+            <div class="popover popover-basket-empty">
+              <div class="popover__content">
+                <h2 class="popover__title">Ваша корзина пока пуста</h2>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -164,9 +169,9 @@
             <div class="range">
               <div class="range__scale">
                 <div class="range__bar" style="left:32px; width:80px">
-                  <button class="range__toggle toggle-min"></button>
+                  <button class="range__toggle toggle-min" type="button"></button>
                   <span class="visually-hidden">Изменить минимальную цену.</span>
-                  <button class="range__toggle toggle-max"></button>
+                  <button class="range__toggle toggle-max" type="button"></button>
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </div>
               </div>
@@ -514,7 +519,7 @@
           </li>
           <li class="developed__item">
             <p class="developed__text text">Сделано в <a class="developed__link"
-                href="https://www.htmlacademy.ru/">.htmlacademy</a> 2021
+                href="https://www.htmlacademy.ru/">.htmlacademy</a> &copy; 2021
             </p>
           </li>
         </ul>
