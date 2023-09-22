@@ -1899,6 +1899,8 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .modal__input {
@@ -1918,12 +1920,12 @@ input::-webkit-calendar-picker-indicator{ /*отключение календа�
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 10px;
+  top: 35px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
   background-image: url(/images/icons/Cross.svg);
   cursor: pointer;
 }
