@@ -159,7 +159,7 @@
                 <a class="slider__button button-light" href="#">Заказать</a>
               </div>
               <div class="wrapper wrapper-slider-button">
-                <button class="slider__toggle slider__toggle_left">
+                <button class="slider__toggle slider__toggle_left" type="button">
                   <svg class="slider__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M9.803 3.805a.665.665 0 0 0-.94-.94L4.195 7.533a.665.665 0 0 0 0 .941l4.669 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
@@ -168,7 +168,7 @@
                   <span class="visually-hidden">Предыдущий слайд</span></button>
                 <img class="slider__img" src="images/main-slider/main-icecream-1.png" width="327" height="507"
                   alt="Нежный пломбир с клубничным джемом.">
-                <button class="slider__toggle slider__toggle_right"><svg class="slider__icon"
+                <button class="slider__toggle slider__toggle_right" type="button"><svg class="slider__icon"
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
@@ -186,7 +186,7 @@
                 <a class="slider__button button-light" href="#">Заказать</a>
               </div>
               <div class="wrapper wrapper-slider-button">
-                <button class="slider__toggle slider__toggle_left"><svg class="slider__icon"
+                <button class="slider__toggle slider__toggle_left" type="button"><svg class="slider__icon"
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M9.803 3.805a.665.665 0 0 0-.94-.94L4.195 7.533a.665.665 0 0 0 0 .941l4.669 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
@@ -195,7 +195,7 @@
                   <span class="visually-hidden">Предыдущий слайд</span></button>
                 <img class="slider__img" src="images/main-slider/main-icecream-2.png" width="312" height="507"
                   alt="Сливочное мороженое со вкусом банана.">
-                <button class="slider__toggle slider__toggle_right"><svg class="slider__icon"
+                <button class="slider__toggle slider__toggle_right" type="button"><svg class="slider__icon"
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
@@ -213,7 +213,7 @@
                 <a class="slider__button button-light" href="#">Заказать</a>
               </div>
               <div class="wrapper wrapper-slider-button">
-                <button class="slider__toggle slider__toggle_left"><svg class="slider__icon"
+                <button class="slider__toggle slider__toggle_left" type="button"><svg class="slider__icon"
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M9.803 3.805a.665.665 0 0 0-.94-.94L4.195 7.533a.665.665 0 0 0 0 .941l4.669 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
@@ -222,7 +222,7 @@
                   <span class="visually-hidden">Предыдущий слайд</span></button>
                 <img class="slider__img" src="images/main-slider/main-icecream-3.png" width="350" height="507"
                   alt="Карамельный пломбир с маршмеллоу.">
-                <button class="slider__toggle slider__toggle_right"><svg class="slider__icon"
+                <button class="slider__toggle slider__toggle_right" type="button"><svg class="slider__icon"
                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
                     <path fill="#2D3440" fill-rule="evenodd"
                       d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
@@ -247,9 +247,9 @@
             </li>
           </ul>
           <ul class="carousel">
-            <li class="carousel__item carousel__item--current"><span class="visually-hidden">1</span></li>
-            <li class="carousel__item"><span class="visually-hidden">2</span></li>
-            <li class="carousel__item"><span class="visually-hidden">3</span></li>
+            <li class="carousel__item"><button class="carousel__button carousel__button--current" type="button"><span class="visually-hidden">1</span></button></li>
+            <li class="carousel__item"><button class="carousel__button" type="button"><span class="visually-hidden">2</span></button></li>
+            <li class="carousel__item"><button class="carousel__button" type="button"><span class="visually-hidden">3</span></button></li>
           </ul>
           <ul class="socials slider__socials">
             <li class="socials__item">
@@ -486,7 +486,7 @@
           <p class="contacts__text text">Для заказов по телефону:</p>
           <a class="telephone" href="tel:88128121212">+7 (812) 812-12-12</a>
           <p class="time">(с 10 до 20 ежедневно)</p>
-          <button class="button contacts__button" type="button">Форма обратной связи</button>
+          <a class="button contacts__button" href="#">Форма обратной связи</a>
         </address>
       </section>
     </main>
