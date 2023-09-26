@@ -539,7 +539,7 @@ a {
   font: inherit;
   font-size: 16px;
   width: 324px;
-  padding: 13px 16px;
+  padding: 12px 14px;
   border-radius: 4px;
   border:1px solid #b9b9b9;
   -webkit-box-sizing: border-box;
@@ -575,7 +575,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   margin: 32px 0;
 }
 
@@ -590,6 +590,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 4px;
 }
 
 .popover__link {
@@ -598,15 +599,17 @@ a {
 
 .popover-log-in {
   display: none;
-  top: 50px;
+  top: 52px;
   left: -120px;
+  padding: 48px;
+
 }
 
 .popover-log-in__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 23px;
+  gap: 22px;
 }
 
 .basket__img {
@@ -1159,6 +1162,10 @@ a {
   height: 268px;
 }
 
+.offer__button {
+  margin-top: auto;
+}
+
 /*Popular*/
 
 .popular {
@@ -1242,6 +1249,7 @@ a {
           justify-content: space-between;
   margin: 0;
   margin-bottom: 24px;
+  margin-top: auto;
 }
 
 .card__price {
@@ -1930,13 +1938,14 @@ a {
   width: 40px;
   height: 40px;
   position: absolute;
-  right: 10px;
-  top: 35px;
+  right: 20px;
+  top: 22px;
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center;
   background-image: url("../images/icons/cross.svg");
+  background-size: 20px 20px;
   cursor: pointer;
 }
 /*Footer*/
