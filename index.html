@@ -54,7 +54,7 @@
               <div class="popover__content">
                 <h2 class="popover__title visually-hidden">Поиск по сайту.</h2>
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="popover__input search-input input" type="text" placeholder="Поиск по сайту" required>
+                  <input class="popover__input search-input input" type="text" name="query" placeholder="Поиск по сайту" required>
                 </form>
               </div>
             </div>
@@ -425,7 +425,7 @@
               вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно &#61;&rpar;
             </p>
             <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-              <label><input class="subscription__input input" type="email" placeholder="email@example.com" required></label>
+              <label><input class="subscription__input input" type="email" name="email" placeholder="email@example.com" required></label>
               <input class="button subscription__button" type="submit" value="Отправить">
             </form>
           </div>

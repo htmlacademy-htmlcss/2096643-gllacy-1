@@ -594,7 +594,8 @@ a {
 }
 
 .popover__link {
-  text-decoration: underline;
+  display: block;
+  border-bottom: 1px solid #2d3440;
 }
 
 .popover-log-in {
@@ -1831,6 +1832,7 @@ a {
   min-width: min-content;
   padding: 40px;
   margin: 64px;
+  max-width: 340pxpx;
   background-color: #fcfcfc;
   -webkit-box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
           box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
@@ -2063,18 +2065,13 @@ a {
 }
 
 .breadcrumbs__link {
-  padding: 8px 8px 8px 0;
+  padding: 8px 2px 2px 0;
+  margin-right: 6px;
   position: relative;
 }
 
-.breadcrumbs__link--active::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 95%;
-  top: 26px;
-  left: 0;
-  background-color: #2d3440;
+.breadcrumbs__link--active{
+  border-bottom: 1px solid #2d3440;
 }
 
 .breadcrumbs__item:not(:last-child):after{
@@ -2092,7 +2089,7 @@ a {
 }
 
 .breadcrumbs__link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #2d3440;
 }
 
 /*Filter*/
@@ -2218,6 +2215,7 @@ a {
 }
 
 .form__sorter {
+  position: relative;
   width: 196px;
   height: 36px;
   border-radius: 20px;
@@ -2225,6 +2223,11 @@ a {
   margin: 0;
   padding: 8px 16px 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
+  appearance: none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: 166px 10px;
 }
 
 .form__list {
@@ -2295,8 +2298,15 @@ a {
 }
 
 .control__input[type="radio"]:hover + .control__marker {
-  border-color: #fcfcfc
-;
+  border-color: #fcfcfc;
+}
+
+.control__input[type="radio"]:focus + .control__marker::before {
+  background-color:#fcfcfc;
+}
+
+.control__input[type="radio"]:focus + .control__marker {
+  border-color: #fcfcfc;
 }
 
 .control__input[type="radio"]:disabled + .control__marker::before {
@@ -2327,6 +2337,13 @@ a {
   background-image: url("../images/icons/check-hover.svg");
 }
 .control__input[type="checkbox"]:checked:hover + .control__marker {
+  background-image: url("../images/icons/chek-on-hover.svg");
+}
+
+.control__input[type="checkbox"]:focus + .control__marker {
+  background-image: url("../images/icons/check-hover.svg");
+}
+.control__input[type="checkbox"]:checked:focus + .control__marker {
   background-image: url("../images/icons/chek-on-hover.svg");
 }
 
