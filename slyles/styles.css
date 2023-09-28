@@ -594,9 +594,8 @@ a {
 }
 
 .popover__link {
-  display: block;
-  border-bottom: 1px solid #2d3440;
-}
+  text-decoration: underline
+;}
 
 .popover-log-in {
   display: none;
