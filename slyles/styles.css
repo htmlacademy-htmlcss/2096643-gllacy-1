@@ -1583,6 +1583,7 @@ a {
       flex-wrap: wrap;
   position: relative;
   margin-bottom: 16px;
+
 }
 
 .order__date .order__input {
@@ -2152,6 +2153,8 @@ a {
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  appearance: none;
+  -moz-appearance:textfield;
 }
 
 .range-label {
