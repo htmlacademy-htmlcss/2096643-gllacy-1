@@ -1587,7 +1587,7 @@ a {
 }
 
 .order__date .order__input {
-  padding-left: 9px;
+  padding-left: 14px;
   font-weight: 400;
 
 }
@@ -1628,6 +1628,7 @@ a {
   padding: 14px 16px;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
+  outline: none;
 }
 
 .input:hover {
@@ -1640,11 +1641,11 @@ a {
           box-shadow: 0 0 0 1px #2d3440;
 }
 
-.input:invalid {
+.input:invalid:not(:placeholder-shown) {
   border-color: #ea5454;
 }
 
-.input:invalid:hover {
+.input:invalid:not(:placeholder-shown):hover {
   border-color: #ea5454;
   -webkit-box-shadow: 0 0 0 1px #ea5454;
           box-shadow: 0 0 0 1px #ea5454;
