@@ -1833,11 +1833,12 @@ a {
   min-width: min-content;
   padding: 40px;
   margin: 64px;
-  max-width: 340pxpx;
+  max-width: 343px;
   background-color: #fcfcfc;
   -webkit-box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
           box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
   font-style: normal;
+  box-sizing: border-box;
 }
 
 .contacts__text {
